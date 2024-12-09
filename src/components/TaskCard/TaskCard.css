@@ -1,0 +1,117 @@
+.task-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.task-card:hover {
+  transform: scale(1.02);
+}
+
+.task-card h4 {
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.task-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.task-card button {
+  margin-right: 8px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.delete-button:hover {
+  background-color: #a71d2a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .task-card {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+
+  .task-card h4 {
+    font-size: 1rem;
+  }
+
+  .task-card button {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .task-card {
+    padding: 8px;
+    margin: 4px 0;
+  }
+
+  .task-card h4 {
+    font-size: 0.9rem;
+  }
+
+  .task-card p {
+    font-size: 0.8rem;
+  }
+
+  .task-card button {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+}
+
+
+.completion-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.completion-container input {
+  width: 100%;
+}
+
+.completion-container span {
+  margin-top: 5px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar div {
+  height: 100%;
+  background-color: #4caf50;
+}
